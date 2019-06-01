@@ -4,13 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>The Word Guess Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-w+8Gqjk9Cuo6XH9HKHG5t5I1VR4YBNdPt/29vwgfZR485eoEJZ8rJRbm3TR32P6k" crossorigin="anonymous">
+    
+    <style>
+        .myborder {
+            border: 5px dashed grey;
+        }
+    </style>
 </head>
 
 <body>
 
-    
+    <header class="container">
+        <h1 class="text-center">The Word Guess Game</h1>
+    </header>
+
+    <section class="container">
+        <div class="row text-center">
+            <div class="col-6 myborder">
+                <img src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a9198dd9140b7427ffc301e/1519491295984/?format=2500w" class="card-img-top" alt="...">
+            </div>
+            <div class="col-6 myborder">
+                <h2>PRESS ANY KEY TO GET STARTED!</h2>
+                <h2>WINS</h2>
+                <p id="wins"></p>
+                <h2>CURRENT WORD</h2>
+                <p id="currentWord"></p>
+                <h2>NUMBER OF GUESSES REMAINING</h2>
+                <p id="guessesRemaining"></p>
+                <h2>LETTER ALREADY GUESSED</h2>
+                <p id="letterGuessed"></p>
+            </div>
+        </div>
+    </section>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
